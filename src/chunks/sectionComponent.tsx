@@ -1,3 +1,6 @@
+// Importing Part
+import HolderComponent from "../chunks/holderComponent.tsx";
+
 // Defining Type Of Props
 interface typeOfProps {
     children: any;
@@ -8,9 +11,11 @@ interface typeOfProps {
 export default function SectionComponent({children, className}:typeOfProps):JSX.Element {
     // Returning JSX
     return (
-        <section className={(className === null) ? 'relative z-[20]' : `relative z-[20] ${className}`}>
-            {children}
-        </section>
+        <HolderComponent>
+            <section className={(className === null) ? 'relative z-[20]' : `relative z-[20] ${className}`}>
+                {children}
+            </section>
+        </HolderComponent>
     );
 }
 

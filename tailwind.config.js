@@ -22,11 +22,13 @@ export default {
             raven: '#737C8A',
             lighterEmerald: '#E8FAEB',
             lighterThemeBlue: '#D8EAFF',
-            aliceBlue: '#F3F8FC'
+            aliceBlue: '#F3F8FC',
+            myGrey: '#ECEFF9'
         },
         boxShadow:{
             emeraldLike: '0 18px 32px 0 rgba(30,172,122,.2)',
-            blueish: '0 80px 83px 0 #DDEAF4'
+            blueish: '0 80px 83px 0 #DDEAF4',
+            plan: '0 33px 60px 0 #CBD1E1'
         }
     },
   },

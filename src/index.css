@@ -7,3 +7,6 @@
 .search-domain-component {@apply absolute left-0 w-[90%] bg-white rounded-[25px] p-[37px] flex gap-[30px] items-start;}
 button[type="button"].bg-myGreen {background-color: theme('colors.myGreen');}
 button[type="button"].bg-themeBlue {background-color: theme('colors.themeBlue');}
+.list-tick > li {@apply relative pr-[20px] text-[14px] font-normal text-raven truncate before:content-[""] before:absolute before:w-[15px] before:h-[15px] before:bg-[url("./assets/img/img-tick.svg")] before:top-[50%] before:translate-y-[-50%] before:right-0;}
+.plan-item:hover .plan-title  {@apply text-themeBlue;}
+.plan-item:hover .plan-btn  {@apply text-white bg-emerald border-emerald;}
