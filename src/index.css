@@ -5,3 +5,5 @@
 
 /*Some Custom Styles*/
 .search-domain-component {@apply absolute left-0 w-[90%] bg-white rounded-[25px] p-[37px] flex gap-[30px] items-start;}
+button[type="button"].bg-myGreen {background-color: theme('colors.myGreen');}
+button[type="button"].bg-themeBlue {background-color: theme('colors.themeBlue');}
