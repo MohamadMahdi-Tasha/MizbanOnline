@@ -8,7 +8,9 @@ export default {
       './src/**/*.{tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {primary: ['Yekan-Bakh', 'sans-serif']},
+    },
   },
   plugins: [],
 }
