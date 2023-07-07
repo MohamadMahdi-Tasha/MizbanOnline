@@ -5,7 +5,7 @@ interface typeOfProps {children: any;}
 export default function HolderComponent({children}:typeOfProps):JSX.Element {
     // Returning JSX
     return (
-        <div className={'max-w-[1100px] mx-auto'}>
+        <div className={'max-w-[1100px] mx-auto px-[20px]'}>
             {children}
         </div>
     );

@@ -7,7 +7,7 @@ export default function HeaderComponent():JSX.Element {
     return (
         <header className={'bg-darkBlue'}>
             <HolderComponent>
-                <div className={'flex items-center flex-wrap justify-between gap-[20px] p-[20px]'}>
+                <div className={'flex items-center flex-wrap justify-between gap-[20px] py-[20px]'}>
                     <div className={'flex gap-[12px] items-center'}>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.9834 10L8.99173 12.0167L13.0167 7.98333" stroke="#1EAC7A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
