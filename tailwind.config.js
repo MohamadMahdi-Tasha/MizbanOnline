@@ -5,6 +5,7 @@ export default {
     content: [
         "./index.html",
         "./src/**/*.{tsx,jsx}",
+        "./src/**/**/*.{tsx,jsx}",
         "./src/*.{tsx}",
     ],
   theme: {
@@ -16,10 +17,16 @@ export default {
             gainSbro: '#D6D9E8',
             outerSpace: '#3F4754',
             emerald: '#1EAC7A',
-            orange: '#FF6C2C'
+            myGreen: '#20BF55',
+            orange: '#FF6C2C',
+            raven: '#737C8A',
+            lighterEmerald: '#E8FAEB',
+            lighterThemeBlue: '#D8EAFF',
+            aliceBlue: '#F3F8FC'
         },
         boxShadow:{
-            emeraldLike: '0 18px 32px 0 rgba(30,172,122,.2)'
+            emeraldLike: '0 18px 32px 0 rgba(30,172,122,.2)',
+            blueish: '0 80px 83px 0 #DDEAF4'
         }
     },
   },

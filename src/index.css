@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
+
+/*Some Custom Styles*/
+.search-domain-component {@apply absolute left-0 w-[90%] bg-white rounded-[25px] p-[37px] flex gap-[30px] items-start;}

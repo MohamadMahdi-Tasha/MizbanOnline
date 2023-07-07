@@ -9,16 +9,25 @@ export default function FirstSectionComponent():JSX.Element {
     // Returning JSX
     return (
         <SectionComponent>
-            <header>
-                <TagLikeComponent>موفقیت شما ، اعتبار ماست</TagLikeComponent>
-                <h1>انتخاب
-                    <span>میزبان آنلاین</span>
+            <header className={'mt-[77px]'}>
+                <div className={'flex justify-center items-center mb-[27px]'}>
+                    <TagLikeComponent type={'success'}>موفقیت شما ، اعتبار ماست</TagLikeComponent>
+                </div>
+                <h1 className={'text-center font-black text-[32px] text-darkBlue mb-[12px]'}>
+                    انتخاب
+                    <span className={'text-themeBlue inline-block'}>میزبان آنلاین</span>
                     ؛ تضمین میزبانی حرفه ای و پایدار
                 </h1>
-                <p>به صورت ۲۴ ساعته و در تمامی لحظات، توان و تلاشمان را در جهت حفاظت از دارایی آنلاینتان بکار می گیریم تا خیال شما همواره آسوده باشد</p>
+                <p className={'text-center text-raven font-normal text-[15px]'}>
+                    به صورت ۲۴ ساعته و در تمامی لحظات، توان و تلاشمان را در جهت حفاظت از دارایی آنلاینتان بکار می گیریم تا خیال
+                    <br/>
+                    شما همواره آسوده باشد
+                </p>
             </header>
-            <main><img src={MainImage} alt="میزبان انلاین"/></main>
-            <footer><SearchDomainComponent /></footer>
+            <main><img className={'w-full'} src={MainImage} alt="میزبان انلاین"/></main>
+            <footer className={'shadow-blueish top-[88%] translate-x-[5%] search-domain-component'}>
+                <SearchDomainComponent />
+            </footer>
         </SectionComponent>
     );
 }

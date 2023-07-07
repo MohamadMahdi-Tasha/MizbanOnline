@@ -5,7 +5,7 @@ interface typeOfProps {children: any;}
 export default function SectionComponent({children}:typeOfProps):JSX.Element {
     // Returning JSX
     return (
-        <section>
+        <section className={'relative z-[20]'}>
             {children}
         </section>
     );
