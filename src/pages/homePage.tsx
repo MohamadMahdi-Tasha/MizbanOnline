@@ -1,6 +1,7 @@
 // Importing Part
 import FirstSectionComponent from "../pageSections/homePage/firstSectionComponent.tsx";
 import SecondSectionComponent from "../pageSections/homePage/secondSectionComponent.tsx";
+import ThirdSectionComponent from "../pageSections/homePage/thirdSectionComponent.tsx";
 
 // Creating functional component of home page and exporting it as default
 export default function HomePage():JSX.Element {
@@ -9,6 +10,7 @@ export default function HomePage():JSX.Element {
         <>
             <FirstSectionComponent />
             <SecondSectionComponent />
+            <ThirdSectionComponent />
         </>
     );
 }

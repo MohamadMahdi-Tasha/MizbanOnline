@@ -12,17 +12,17 @@ import ServerImage from '../../assets/img/homePage/thirdSection/img-server.png';
 export default function ThirdSectionComponent():JSX.Element {
     // Returning JSX
     return (
-        <SectionComponent>
-            <header>
-                <h3>سرویس های متنوع و جامع متناسب با هر نوع نیاز</h3>
-                <p>
+        <SectionComponent className={'py-[76px]'}>
+            <header className={'mb-[50px]'}>
+                <h3 className={'text-center font-bold text-[24px] text-darkBlue mb-[10px]'}>سرویس های متنوع و جامع متناسب با هر نوع نیاز</h3>
+                <p className={'text-center font-normal text-[16px] text-raven'}>
                     میزبان آنلاین با ارایه طیف گسترده ای از خدمات در هر مرحله ای از نیاز های زیرساختی مشترکین
                     <br/>
                     یک راهکار هوشمندانه برای ارایه به مشترکین دارد.
                 </p>
             </header>
             <main>
-                <ul>
+                <ul className={'flex justify-center gap-[66px] mx-auto flex-wrap'}>
                     <ServiceComponent img={SoftwareServerImage} title={'لایسنس های نرم افزاری'} subTitle={'Software licenses'} />
                     <ServiceComponent img={MonitoringServerImage} title={'گواهینامه های SSL'} subTitle={'SSL Certificates'} />
                     <ServiceComponent img={ConfigServerImage} title={'کانفیگ سرور'} subTitle={'Server config'} />
