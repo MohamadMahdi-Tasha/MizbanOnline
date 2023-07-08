@@ -24,40 +24,40 @@ export default function SixthSectionComponent():JSX.Element {
     return (
         <div className={'bg-myGrey'}>
             <SectionComponent className={'py-[73px]'}>
-                <header>
-                    <TitleAndParagraphComponent centred marginBottom={0} title={'به خانواده ۳۰۰۰ نفری میزبان آنلاین بپیوندید'}>
+                <header className={'mb-[53px]'}>
+                    <TitleAndParagraphComponent title={'به خانواده ۳۰۰۰ نفری میزبان آنلاین بپیوندید'} marginBottom={0} centred>
                         پشتیبانی قوی و گسترده متخصصان میزبان آنلاین در شبانه روز ، عملکرد فوق العاده سریع
                         <br/>
                         سرویس های ارائه شده از دلایلی هستند که کاربران ما میزبان آنلاین را توصیه میکنند
                     </TitleAndParagraphComponent>
-                    <div>
+                    <div className={'flex justify-center items-center gap-[100px] mt-[38px]'}>
                         <AchievmentComponent count={'+75000'}>سرویس ارائه شده</AchievmentComponent>
                         <AchievmentComponent count={'173'}>محصول قابل ارائه</AchievmentComponent>
                         <AchievmentComponent count={'+23'}>دیتاسنتر فعال</AchievmentComponent>
                         <AchievmentComponent count={'+53000'}>مشتری خوشحال</AchievmentComponent>
                     </div>
                 </header>
-                <main>
-                    <img className={'w-full'} src={MainImage} alt="نقشه جهان"/>
-                    <div>
+                <main className={'mb-[41px]'}>
+                    <img className={'w-full mb-[30px] block'} src={MainImage} alt="نقشه جهان"/>
+                    <div className={'flex items-center gap-[20px]'}>
                         <CommentComponent name={'رحیم حنایی'} job={'رحیم حنایی'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی ...</CommentComponent>
                         <CommentComponent name={'رحیم حنایی'} job={'رحیم حنایی'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی ...</CommentComponent>
                         <CommentComponent name={'رحیم حنایی'} job={'رحیم حنایی'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی ...</CommentComponent>
                     </div>
                 </main>
-                <footer>
-                    <a href="#"><img src={BaniModeImage} alt="BaniModeImage"/></a>
-                    <a href="#"><img src={BazarBimeImage} alt="BazarBimeImage"/></a>
-                    <a href="#"><img src={ertebatFardaImage} alt="ertebatFardaImage"/></a>
-                    <a href="#"><img src={FoldaImage} alt="FoldaImage"/></a>
-                    <a href="#"><img src={GoldIranImage} alt="GoldIranImage"/></a>
-                    <a href="#"><img src={HomsaImage} alt="HomsaImage"/></a>
-                    <a href="#"><img src={IstcoolImage} alt="IstcoolImage"/></a>
-                    <a href="#"><img src={JeanImage} alt="JeanImage"/></a>
-                    <a href="#"><img src={KomodaImage} alt="KomodaImage"/></a>
-                    <a href="#"><img src={ShenotoImage} alt="ShenotoImage"/></a>
-                    <a href="#"><img src={SibcheImage} alt="SibcheImage"/></a>
-                    <a href="#"><img src={TapsiImage} alt="TapsiImage"/></a>
+                <footer className={'grid grid-cols-6 gap-x-0 gap-y-[21px]'}>
+                    <a href="#"><img className={'w-full'} src={BaniModeImage} alt="BaniModeImage"/></a>
+                    <a href="#"><img className={'w-full'} src={BazarBimeImage} alt="BazarBimeImage"/></a>
+                    <a href="#"><img className={'w-full'} src={ertebatFardaImage} alt="ertebatFardaImage"/></a>
+                    <a href="#"><img className={'w-full'} src={FoldaImage} alt="FoldaImage"/></a>
+                    <a href="#"><img className={'w-full'} src={GoldIranImage} alt="GoldIranImage"/></a>
+                    <a href="#"><img className={'w-full'} src={HomsaImage} alt="HomsaImage"/></a>
+                    <a href="#"><img className={'w-full'} src={IstcoolImage} alt="IstcoolImage"/></a>
+                    <a href="#"><img className={'w-full'} src={JeanImage} alt="JeanImage"/></a>
+                    <a href="#"><img className={'w-full'} src={KomodaImage} alt="KomodaImage"/></a>
+                    <a href="#"><img className={'w-full'} src={ShenotoImage} alt="ShenotoImage"/></a>
+                    <a href="#"><img className={'w-full'} src={SibcheImage} alt="SibcheImage"/></a>
+                    <a href="#"><img className={'w-full'} src={TapsiImage} alt="TapsiImage"/></a>
                 </footer>
             </SectionComponent>
         </div>
