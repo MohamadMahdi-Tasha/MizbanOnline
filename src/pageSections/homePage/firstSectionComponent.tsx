@@ -8,7 +8,7 @@ import SearchDomainComponent from '../../components/searchDomainComponent.tsx';
 export default function FirstSectionComponent():JSX.Element {
     // Returning JSX
     return (
-        <SectionComponent>
+        <SectionComponent className={'relative'}>
             <header className={'mt-[77px]'}>
                 <div className={'flex justify-center items-center mb-[27px]'}>
                     <TagLikeComponent type={'success'}>موفقیت شما ، اعتبار ماست</TagLikeComponent>

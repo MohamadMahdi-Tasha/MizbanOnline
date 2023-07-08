@@ -12,7 +12,7 @@ export default function SectionComponent({children, className}:typeOfProps):JSX.
     // Returning JSX
     return (
         <HolderComponent>
-            <section className={(className === null) ? 'relative z-[20]' : `relative z-[20] ${className}`}>
+            <section className={className}>
                 {children}
             </section>
         </HolderComponent>
