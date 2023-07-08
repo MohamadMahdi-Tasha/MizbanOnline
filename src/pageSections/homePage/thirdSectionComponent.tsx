@@ -7,6 +7,7 @@ import MonitoringServerImage from '../../assets/img/homePage/thirdSection/img-mo
 import ConfigServerImage from '../../assets/img/homePage/thirdSection/img-config.png';
 import SSLServerImage from '../../assets/img/homePage/thirdSection/img-ssl.png';
 import ServerImage from '../../assets/img/homePage/thirdSection/img-server.png';
+import TitleAndParagraphComponent from "../../chunks/titleAndParagraphComponent.tsx";
 
 // Creating functional component of home page's Third Section and exporting it as default
 export default function ThirdSectionComponent():JSX.Element {
@@ -14,12 +15,11 @@ export default function ThirdSectionComponent():JSX.Element {
     return (
         <SectionComponent className={'py-[76px]'}>
             <header className={'mb-[50px]'}>
-                <h3 className={'text-center font-bold text-[24px] text-darkBlue mb-[10px]'}>سرویس های متنوع و جامع متناسب با هر نوع نیاز</h3>
-                <p className={'text-center font-normal text-[16px] text-raven'}>
+                <TitleAndParagraphComponent centred title={'سرویس های متنوع و جامع متناسب با هر نوع نیاز'} marginBottom={0}>
                     میزبان آنلاین با ارایه طیف گسترده ای از خدمات در هر مرحله ای از نیاز های زیرساختی مشترکین
                     <br/>
                     یک راهکار هوشمندانه برای ارایه به مشترکین دارد.
-                </p>
+                </TitleAndParagraphComponent>
             </header>
             <main>
                 <ul className={'flex justify-center gap-[66px] mx-auto flex-wrap'}>

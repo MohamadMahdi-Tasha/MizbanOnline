@@ -2,6 +2,7 @@
 import SectionComponent from "../../chunks/sectionComponent.tsx";
 import MainImage from '../../assets/img/homePage/fourthSection/img-main.png';
 import SecurityFeaturesComponent from '../../components/securityFeaturesComponent.tsx';
+import TitleAndParagraphComponent from "../../chunks/titleAndParagraphComponent.tsx";
 
 // Creating functional component of home page's Fourth Section and exporting it as default
 export default function FourthSectionComponent():JSX.Element {
@@ -12,12 +13,11 @@ export default function FourthSectionComponent():JSX.Element {
                 <main className={'flex items-start gap-[64px]'}>
                     <img src={MainImage} alt="ایلوستریشن"/>
                     <div>
-                        <h3 className={'text-darkBlue text-[24px] font-bold mb-[10px]'}>امنیت وب سایت از نام آن مهم تر است!</h3>
-                        <p className={'text-raven text-[16px] font-normal mb-[39px]'}>
+                        <TitleAndParagraphComponent title={'امنیت وب سایت از نام آن مهم تر است!'} marginBottom={39}>
                             میزبان آنلاین نهایت تلاش خود را جهت ارائه هاست مطمئن و امن می نماید تا اطمینان
                             <br/>
                             حاصل کند، امن ترین محیط میزبانی را برای مشتریان خود فراهم کرده است.
-                        </p>
+                        </TitleAndParagraphComponent>
                         <ul className={'flex flex-col gap-[21px] list-inside'}>
                             <SecurityFeaturesComponent title={'سخت افزار های Anti DDoS و UTM'}>استفاده از فایروال و UTM های سخت افزاری روی لبه شبکه در دیتاسنتر</SecurityFeaturesComponent>
                             <SecurityFeaturesComponent title={'کانفیگ های امنیتی ســــرور'}>استفاده از فایروال های نرم افزاری و Bruteforce Protection پیشرفته</SecurityFeaturesComponent>

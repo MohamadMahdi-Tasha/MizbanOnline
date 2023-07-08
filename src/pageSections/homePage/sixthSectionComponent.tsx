@@ -16,6 +16,7 @@ import KomodaImage from '../../assets/img/homePage/sixthSection/footer/img-komod
 import ShenotoImage from '../../assets/img/homePage/sixthSection/footer/img-shenoto.png';
 import SibcheImage from '../../assets/img/homePage/sixthSection/footer/img-sibche.png';
 import TapsiImage from '../../assets/img/homePage/sixthSection/footer/img-tapsi.png';
+import TitleAndParagraphComponent from "../../chunks/titleAndParagraphComponent.tsx";
 
 // Creating functional component of home page's Fifth Section and exporting it as default
 export default function SixthSectionComponent():JSX.Element {
@@ -24,12 +25,11 @@ export default function SixthSectionComponent():JSX.Element {
         <div className={'bg-myGrey'}>
             <SectionComponent className={'py-[73px]'}>
                 <header>
-                    <h3>به خانواده ۳۰۰۰ نفری میزبان آنلاین بپیوندید</h3>
-                    <p>
+                    <TitleAndParagraphComponent centred marginBottom={0} title={'به خانواده ۳۰۰۰ نفری میزبان آنلاین بپیوندید'}>
                         پشتیبانی قوی و گسترده متخصصان میزبان آنلاین در شبانه روز ، عملکرد فوق العاده سریع
                         <br/>
                         سرویس های ارائه شده از دلایلی هستند که کاربران ما میزبان آنلاین را توصیه میکنند
-                    </p>
+                    </TitleAndParagraphComponent>
                     <div>
                         <AchievmentComponent count={'+75000'}>سرویس ارائه شده</AchievmentComponent>
                         <AchievmentComponent count={'173'}>محصول قابل ارائه</AchievmentComponent>

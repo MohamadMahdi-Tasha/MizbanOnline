@@ -11,6 +11,7 @@ import VmwareLogoImage from '../../assets/img/homePage/secondSection/logos/img-v
 import UbuntoLogoImage from '../../assets/img/homePage/secondSection/logos/img-ubunto.svg';
 import CpanelLogoImage from '../../assets/img/homePage/secondSection/logos/img-cpanel.svg';
 import MicrosoftLogoImage from '../../assets/img/homePage/secondSection/logos/img-microsoft.svg';
+import TitleAndParagraphComponent from "../../chunks/titleAndParagraphComponent.tsx";
 
 // Creating functional component of home page's Second Section and exporting it as default
 export default function SecondSectionComponent():JSX.Element {
@@ -19,8 +20,9 @@ export default function SecondSectionComponent():JSX.Element {
         <div className={'bg-myGrey'}>
             <SectionComponent className={'pt-[300px] pb-[67px]'}>
                 <header className={'mb-[50px]'}>
-                    <h3 className={'text-[24px] text-center mb-[10px] font-bold text-darkBlue'}>خدمات ما برای کسب و کارها</h3>
-                    <p className={'text-[16px] text-center font-normal text-outerSpace'}>با انتخاب سرویس مناسب کسب و کار خود را سریعتر رشد دهید میزبان آنلاین در این مسیر همراه شماست</p>
+                    <TitleAndParagraphComponent centred title={'خدمات ما برای کسب و کارها'} marginBottom={0}>
+                        با انتخاب سرویس مناسب کسب و کار خود را سریعتر رشد دهید میزبان آنلاین در این مسیر همراه شماست
+                    </TitleAndParagraphComponent>
                 </header>
                 <main className={'mb-[92px]'}>
                     <div className={'flex gap-[35px] mb-[87px]'}>

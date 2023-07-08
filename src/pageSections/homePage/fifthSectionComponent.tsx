@@ -3,6 +3,7 @@ import SectionComponent from "../../chunks/sectionComponent.tsx";
 import MainImage from '../../assets/img/homePage/fifthSection/img-main.png';
 import BackUpImage from '../../assets/img/homePage/fifthSection/img-backup.png';
 import BackUpImage2 from '../../assets/img/homePage/fifthSection/img-backup2.png';
+import TitleAndParagraphComponent from "../../chunks/titleAndParagraphComponent.tsx";
 
 // Creating functional component of home page's Fifth Section and exporting it as default
 export default function FifthSectionComponent():JSX.Element {
@@ -11,14 +12,13 @@ export default function FifthSectionComponent():JSX.Element {
         <SectionComponent className={'py-[58px]'}>
             <main className={'flex items-center gap-[150px]'}>
                 <div>
-                    <h3 className={'text-darkBlue text-[24px] font-bold'}>اطلاعات شما سرمایه شماست !</h3>
-                    <p className={'text-raven text-[16px] font-normal mb-[82px]'}>
+                    <TitleAndParagraphComponent title={'اطلاعات شما سرمایه شماست !'} marginBottom={82}>
                         دیگر نگران از دست رفتن حتی یک بیت از اطلاعات خود نباشید.  میزبان آنلاین
                         <br/>
                         با بهره گیری سرورهای مختلف به صورت خودکار در بازه های هفتگی  از
                         <br/>
                         سایت شما پشتیبان تهیه می کند
-                    </p>
+                    </TitleAndParagraphComponent>
                     <div className={'flex gap-[72px]'}>
                         <div>
                             <img className={'mb-[10px] block w-[65px]'} src={BackUpImage} alt="بک اپ"/>
