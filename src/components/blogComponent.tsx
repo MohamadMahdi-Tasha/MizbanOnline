@@ -11,6 +11,7 @@ export default function BlogComponent({date,link, title}:typeOfProps):JSX.Elemen
     return (
         <a href={link}>
             <time
+                className={'block text-[14px] font-normal text-raven mb-[10px]'}
                 dateTime={date.toString()}>{
                 date.toLocaleDateString('fa-IR', {
                     year: 'numeric',
@@ -19,7 +20,7 @@ export default function BlogComponent({date,link, title}:typeOfProps):JSX.Elemen
                 })
             }
             </time>
-            <span>{title}</span>
+            <span className={'block text-[16px] font-semibold text-outerSpace'}>{title}</span>
         </a>
     );
 }

@@ -18,7 +18,7 @@ import SibcheImage from '../../assets/img/homePage/sixthSection/footer/img-sibch
 import TapsiImage from '../../assets/img/homePage/sixthSection/footer/img-tapsi.png';
 import TitleAndParagraphComponent from "../../chunks/titleAndParagraphComponent.tsx";
 
-// Creating functional component of home page's Fifth Section and exporting it as default
+// Creating functional component of home page's Sixth Section and exporting it as default
 export default function SixthSectionComponent():JSX.Element {
     // Returning JSX
     return (
