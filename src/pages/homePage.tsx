@@ -3,6 +3,7 @@ import FirstSectionComponent from "../pageSections/homePage/firstSectionComponen
 import SecondSectionComponent from "../pageSections/homePage/secondSectionComponent.tsx";
 import ThirdSectionComponent from "../pageSections/homePage/thirdSectionComponent.tsx";
 import FourthSectionComponent from '../pageSections/homePage/fourthSectionComponent.tsx'
+import FifthSectionComponent from "../pageSections/homePage/fifthSectionComponent.tsx";
 
 // Creating functional component of home page and exporting it as default
 export default function HomePage():JSX.Element {
@@ -13,6 +14,7 @@ export default function HomePage():JSX.Element {
             <SecondSectionComponent />
             <ThirdSectionComponent />
             <FourthSectionComponent />
+            <FifthSectionComponent />
         </>
     );
 }
