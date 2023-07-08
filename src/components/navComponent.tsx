@@ -7,7 +7,7 @@ import HolderComponent from "../chunks/holderComponent.tsx";
 export default function NavComponent():JSX.Element {
     // Returning JSX
     return (
-        <nav className={'backdrop-blur bg-white/20 border-b border-b-gainSbro py-[20px] sticky top-0 z-[50]'}>
+        <nav className={'bg-white border-b border-b-gainSbro py-[20px]'}>
             <HolderComponent>
                 <div className={'flex items-center justify-between gap-[20px]'}>
                     <Link to={'/'} className={'flex items-center gap-[10px]'}>

@@ -12,18 +12,19 @@ export default {
     extend: {
         fontFamily: {primary: ['Yekan-Bakh', 'sans-serif']},
         colors:{
-            darkBlue: '#17234F',
-            themeBlue: '#1C40BF',
             gainSbro: '#D6D9E8',
-            outerSpace: '#3F4754',
-            emerald: '#1EAC7A',
-            myGreen: '#20BF55',
-            orange: '#FF6C2C',
-            raven: '#737C8A',
             lighterEmerald: '#E8FAEB',
             lighterThemeBlue: '#D8EAFF',
             aliceBlue: '#F3F8FC',
-            myGrey: '#ECEFF9'
+            myGrey: '#ECEFF9',
+            darkBlue: '#17234F',
+            themeBlue: '#1C40BF',
+            lightBlue: '#2D3C6F',
+            outerSpace: '#3F4754',
+            raven: '#737C8A',
+            emerald: '#1EAC7A',
+            myGreen: '#20BF55',
+            orange: '#FF6C2C',
         },
         boxShadow:{
             emeraldLike: '0 18px 32px 0 rgba(30,172,122,.2)',
