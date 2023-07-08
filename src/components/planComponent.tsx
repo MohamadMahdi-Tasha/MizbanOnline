@@ -14,11 +14,11 @@ export default function PlanComponent({img,type,title,paragraph,children,isBigge
     return (
         <a href="#" className={
             (isBigger)
-                ? 'overflow-hidden block bg-white shadow-plan scale-[1.07] rounded-[15px] plan-item'
+                ? 'overflow-hidden block bg-white lg:shadow-plan lg:scale-[1.07] rounded-[15px] plan-item'
                 : 'overflow-hidden block bg-white rounded-[15px] plan-item'
         }>
-            <div className={'bg-white h-[200px] flex items-center justify-center'}><img src={img} alt="عکس سرور پلن"/></div>
-            <div className={'p-[25px]'}>
+            <div className={'bg-white lg:h-[200px] h-[150px] flex items-center justify-center'}><img src={img} alt="عکس سرور پلن"/></div>
+            <div className={'lg:p-[25px] p-[20px]'}>
                 <div className={'mb-[20px] pb-[20px] border-b border-b-gainSbro'}>
                     <span className={'text-[14px] block font-normal text-raven truncate'}>{type.toUpperCase()}</span>
                     <span className={'mb-[8px] block text-[24px] font-bold truncate text-black plan-title transition-all'}>{title}</span>

@@ -13,7 +13,7 @@ import TitleAndParagraphComponent from "../../chunks/titleAndParagraphComponent.
 export default function ThirdSectionComponent():JSX.Element {
     // Returning JSX
     return (
-        <SectionComponent className={'py-[76px]'}>
+        <SectionComponent className={'lg:py-[76px] py-[20px]'}>
             <header className={'mb-[50px]'}>
                 <TitleAndParagraphComponent centred title={'سرویس های متنوع و جامع متناسب با هر نوع نیاز'} marginBottom={0}>
                     میزبان آنلاین با ارایه طیف گسترده ای از خدمات در هر مرحله ای از نیاز های زیرساختی مشترکین
@@ -22,7 +22,7 @@ export default function ThirdSectionComponent():JSX.Element {
                 </TitleAndParagraphComponent>
             </header>
             <main>
-                <ul className={'flex justify-center gap-[66px] mx-auto flex-wrap'}>
+                <ul className={'flex justify-center lg:gap-[66px] gap-[30px] mx-auto overflow-auto'}>
                     <ServiceComponent img={SoftwareServerImage} title={'لایسنس های نرم افزاری'} subTitle={'Software licenses'} />
                     <ServiceComponent img={MonitoringServerImage} title={'گواهینامه های SSL'} subTitle={'SSL Certificates'} />
                     <ServiceComponent img={ConfigServerImage} title={'کانفیگ سرور'} subTitle={'Server config'} />

@@ -4,7 +4,7 @@
 @tailwind base;
 
 /*Some Custom Styles*/
-.search-domain-component {@apply absolute left-0 w-[90%] bg-white rounded-[25px] p-[37px] flex gap-[30px] items-start;}
+.search-domain-component {@apply absolute left-0 lg:w-[90%] w-full bg-white rounded-[25px] lg:p-[37px] p-[30px] flex lg:flex-row flex-col gap-[30px] items-start;}
 button[type="button"].bg-myGreen {background-color: theme('colors.myGreen');}
 button[type="button"].bg-themeBlue {background-color: theme('colors.themeBlue');}
 .list-tick > li {@apply relative pr-[20px] text-[14px] font-normal text-raven truncate before:content-[""] before:absolute before:w-[15px] before:h-[15px] before:bg-[url("./assets/img/img-tick.svg")] before:top-[50%] before:translate-y-[-50%] before:right-0;}

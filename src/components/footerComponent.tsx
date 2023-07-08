@@ -11,38 +11,38 @@ export default function FooterComponent():JSX.Element {
     return (
         <footer className={'bg-darkBlue'}>
             <HolderComponent>
-                <div className={'py-[83px]'}>
-                    <header className={'bg-themeBlue relative rounded-[18px] h-[389px] w-full py-[62px] px-[39px] mb-[46px]'}>
+                <div className={'lg:py-[83px] py-[30px]'}>
+                    <header className={'bg-themeBlue relative rounded-[18px] h-[389px] w-full lg:py-[62px] lg:px-[39px] py-[20px] px-[20px] mb-[46px]'}>
                         <div>
-                            <h3 className={'text-white font-extrabold text-[36px] mb-[25px]'}>
+                            <h3 className={'text-white font-extrabold lg:text-[36px] text-[25px] mb-[25px]'}>
                                 به یک مشاوره و پشتیبانی
                                 <br/>
                                 حرفه ای نیاز دارید؟
                             </h3>
-                            <p className={'text-[16px] font-normal text-white mb-[32px]'}>
+                            <p className={'lg:text-[16px] text-[14px] font-normal text-white mb-[32px]'}>
                                 مجموعه میزبان آنلاین به بصورت ۲۴ ساعته و ۷ روز هفته از طریق چت آنلاین،
-                                <br/>
+                                <br className={'lg:block hidden'} />
                                 تیکتینگ و تلفن پشتیبان شماست.
                             </p>
-                            <div className={'flex items-center gap-[25px]'}>
+                            <div className={'flex lg:flex-row flex-col  items-center gap-[25px]'}>
                                 <a className={'flex items-center'} href="tel:02191070175">
-                                    <span className={'text-[20px] font-normal text-white ml-[22px]'}>02191070175</span>
+                                    <span className={'lg:text-[20px] text-[15px] font-normal text-white ml-[22px]'}>02191070175</span>
                                     <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M26.5474 22.1491C26.5474 22.5841 26.4507 23.0312 26.2453 23.4662C26.0399 23.9012 25.7741 24.312 25.4237 24.6987C24.8316 25.3512 24.1791 25.8224 23.442 26.1245C22.717 26.4266 21.9316 26.5837 21.0857 26.5837C19.8532 26.5837 18.5362 26.2937 17.1466 25.7016C15.757 25.1095 14.3674 24.312 12.9899 23.3091C11.6003 22.2941 10.2832 21.1703 9.02658 19.9257C7.78199 18.6691 6.65824 17.352 5.65533 15.9745C4.66449 14.597 3.86699 13.2195 3.28699 11.8541C2.70699 10.4766 2.41699 9.15949 2.41699 7.90282C2.41699 7.08116 2.56199 6.29574 2.85199 5.57074C3.14199 4.83366 3.60116 4.15699 4.24158 3.55283C5.01491 2.79158 5.86074 2.41699 6.75491 2.41699C7.09324 2.41699 7.43158 2.48949 7.73366 2.63449C8.04783 2.77949 8.32574 2.99699 8.54324 3.31116L11.3466 7.26241C11.5641 7.56449 11.7212 7.84241 11.8299 8.10824C11.9387 8.36199 11.9991 8.61574 11.9991 8.84532C11.9991 9.13532 11.9145 9.42532 11.7453 9.70324C11.5882 9.98116 11.3587 10.2712 11.0687 10.5612L10.1503 11.5157C10.0174 11.6487 9.95699 11.8057 9.95699 11.9991C9.95699 12.0957 9.96908 12.1803 9.99325 12.277C10.0295 12.3737 10.0657 12.4462 10.0899 12.5187C10.3074 12.9174 10.682 13.437 11.2137 14.0653C11.7574 14.6937 12.3374 15.3341 12.9657 15.9745C13.6182 16.6149 14.2466 17.207 14.887 17.7507C15.5153 18.2824 16.0349 18.6449 16.4457 18.8624C16.5062 18.8866 16.5787 18.9228 16.6632 18.9591C16.7599 18.9953 16.8566 19.0074 16.9653 19.0074C17.1707 19.0074 17.3278 18.9349 17.4607 18.802L18.3791 17.8957C18.6812 17.5937 18.9712 17.3641 19.2491 17.2191C19.527 17.0499 19.8049 16.9653 20.107 16.9653C20.3366 16.9653 20.5782 17.0137 20.8441 17.1224C21.1099 17.2312 21.3878 17.3882 21.6899 17.5937L25.6895 20.4332C26.0037 20.6507 26.2212 20.9045 26.3541 21.2066C26.4749 21.5087 26.5474 21.8107 26.5474 22.1491Z" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
                                         <path opacity="0.4" d="M22.3542 10.8747C22.3542 10.1497 21.7862 9.03801 20.9404 8.13176C20.1671 7.29801 19.14 6.64551 18.125 6.64551" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                         <path opacity="0.4" d="M26.5833 10.8753C26.5833 6.19908 22.8012 2.41699 18.125 2.41699" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                 </a>
-                                <span className={'text-[20px] font-semibold text-white'}>یا</span>
+                                <span className={'lg:text-[20px] text-[15px] font-semibold text-white'}>یا</span>
                                 <a href="#"><button className={'border border-white text-[15px] font-normal rounded-[8px] text-white px-[30px] py-[15px]'} tabIndex={-1}>پشتیبانی تیکت</button></a>
                             </div>
                         </div>
-                        <div className={'absolute left-0 bottom-0 rounded-l-[18px] overflow-hidden'}>
+                        <div className={'absolute left-0 bottom-0 rounded-l-[18px] overflow-hidden lg:block hidden'}>
                             <img src={ManImage} className={'w-[320px]'} alt="عکس یک مرد"/>
                         </div>
                     </header>
                     <main>
-                        <a className={'flex items-center mb-[14px]'} href="#">
+                        <a className={'flex lg:flex-row flex-col items-center mb-[14px]'} href="#">
                             <svg className={'ml-[11px]'} width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.5034 37.1895C39.0869 33.3263 42 27.5343 42 21.06C42 9.4289 32.598 0 21 0C9.40202 0 0 9.4289 0 21.06C0 27.1778 2.60115 32.6863 6.75485 36.534L9.56725 24.7323C9.89659 23.3503 10.9307 22.2463 12.2855 21.8302C15.2424 20.9222 18.0638 23.5801 17.345 26.5964L13.9366 40.8991C14.3515 41.0477 14.7724 41.1836 15.1989 41.3062L20.3326 19.7639C20.6619 18.3819 21.696 17.2779 23.0508 16.8619C26.0077 15.9539 28.8291 18.6117 28.1103 21.628L23.2556 42C23.9157 41.9293 24.5668 41.8279 25.2072 41.6973L31.2865 16.1868C31.6158 14.8047 32.6499 13.7007 34.0047 13.2847C36.9616 12.3767 39.7831 15.0345 39.0643 18.0509L34.5034 37.1895Z" fill="white"/>
                             </svg>
@@ -51,8 +51,8 @@ export default function FooterComponent():JSX.Element {
                                 <span className={'block fontLght text-[11px] text-myGrey'}>همراه همیشگی شماست</span>
                             </div>
                         </a>
-                        <div className={'grid grid-col grid-cols-6 gap-[30px] mb-[54px]'}>
-                            <p className={'font-normal text-[15px] col-span-3 text-gainSbro leading-[182%]'}>"میزبان آنلاین" به عنوان یکی از زیر مجموعه های مستقل شرکت توسعه صنعت ارتباطات اورین، در سال ۱۳۹۳ فعالیت خود را با ارائه خدمات پایه در میزبانی وب لینوکس و ویندوز، و ثبت دامنه های ملی و بین المللی، آغاز کرد. تجربه سال های گذشته در کنار همکارانی که شبانه روز در کنار هم برای ارتقاء دانش و توان فنی شرکت تلاش کرده اند باعث شده تا امروز با افتخار، به عنوان یکی از شرکت های پیشرو در صنعت میزبانی، با ارائه خدمات نوین و متنوع در خدمت مشتریان عزیز باشیم.</p>
+                        <div className={'grid grid-col lg:grid-cols-6 grid-cols-1 gap-[30px] mb-[54px]'}>
+                            <p className={'font-normal text-[15px] lg:col-span-3 col-span-1 text-gainSbro leading-[182%]'}>"میزبان آنلاین" به عنوان یکی از زیر مجموعه های مستقل شرکت توسعه صنعت ارتباطات اورین، در سال ۱۳۹۳ فعالیت خود را با ارائه خدمات پایه در میزبانی وب لینوکس و ویندوز، و ثبت دامنه های ملی و بین المللی، آغاز کرد. تجربه سال های گذشته در کنار همکارانی که شبانه روز در کنار هم برای ارتقاء دانش و توان فنی شرکت تلاش کرده اند باعث شده تا امروز با افتخار، به عنوان یکی از شرکت های پیشرو در صنعت میزبانی، با ارائه خدمات نوین و متنوع در خدمت مشتریان عزیز باشیم.</p>
                             <div className={'col-span-1'}>
                                 <span className={'text-[16px] font-bold text-white mb-[11px] block'}>میزبان آنلاین</span>
                                 <ul className={'flex flex-col gap-[10px]'}>
@@ -62,9 +62,9 @@ export default function FooterComponent():JSX.Element {
                                     <li><a className={'font-normal text-gainSbro transition-all hover:text-emerald text-[15px]'} href="#">تماس با ما</a></li>
                                 </ul>
                             </div>
-                            <div className={'col-span-2'}>
+                            <div className={'lg:col-span-2 col-span-1'}>
                                 <span className={'text-[16px] font-bold text-white mb-[11px] block'}>میزبان آنلاین</span>
-                                <ul className={'grid grid-cols-2 grid-rows-4 gap-y-[10px] gap-x-[0px]'}>
+                                <ul className={'grid lg:grid-cols-2 grid-cols-1 grid-rows-4 gap-y-[10px] gap-x-[0px]'}>
                                     <li><a className={'font-normal text-gainSbro truncate transition-all hover:text-emerald text-[15px]'} href="#">هاست اشتراکی</a></li>
                                     <li><a className={'font-normal text-gainSbro truncate transition-all hover:text-emerald text-[15px]'} href="#">لایسنس های نرم افزاری</a></li>
                                     <li><a className={'font-normal text-gainSbro truncate transition-all hover:text-emerald text-[15px]'} href="#">سرور مجازی</a></li>
@@ -76,17 +76,17 @@ export default function FooterComponent():JSX.Element {
                                 </ul>
                             </div>
                         </div>
-                        <div className={'grid grid-cols-3 gap-[17px]'}>
+                        <div className={'grid lg:grid-cols-3 grid-cols-1 gap-[17px]'}>
                             <div className={'border border-lightBlue rounded-[15px] px-[28px] py-[25px]'}>
                                 <span className={'block font-normal text-[16px] text-white mb-[24px]'}>با خیال راحت اعتماد کنید</span>
-                                <div className={'flex items-center gap-[26px]'}>
+                                <div className={'flex items-center justify-between gap-[26px]'}>
                                     <a href="#"><img src={ImageEnamad} alt="نماد اعتماد الکترونیکی"/></a>
                                     <a href="#"><img src={ImageEnamad2} alt="نماد اعتماد الکترونیکی"/></a>
                                     <a href="#"><img src={ImageEnamad3} alt="نماد اعتماد الکترونیکی"/></a>
                                 </div>
                             </div>
-                            <div className={'border border-lightBlue rounded-[15px] px-[28px] py-[25px] col-span-2'}>
-                                <div className={'flex items-center gap-[42px] mb-[30px]'}>
+                            <div className={'border border-lightBlue rounded-[15px] px-[28px] py-[25px] lg:col-span-2 col-span-1'}>
+                                <div className={'flex lg:flex-row flex-col lg:items-center gap-[42px] mb-[30px]'}>
                                     <div>
                                         <div className={'flex items-center mb-[10px]'}>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +114,7 @@ export default function FooterComponent():JSX.Element {
                                         <a className={'text-[17px] font-normal text-white'} href="mailto:info@mizbanonline.com">info@mizbanonline.com</a>
                                     </div>
                                 </div>
-                                <div className={'flex items-center gap-[42px]'}>
+                                <div className={'flex lg:flex-row flex-col lg:items-center gap-[42px]'}>
                                     <div>
                                         <div className={'flex items-center mb-[10px]'}>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,9 +141,9 @@ export default function FooterComponent():JSX.Element {
                     </main>
                 </div>
             </HolderComponent>
-            <div className={'bg-white w-full px-auto py-[29px]'}>
+            <div className={'bg-white w-full px-auto lg:py-[29px] py-[20px]'}>
                 <HolderComponent>
-                    <div className={'flex items-center justify-between'}>
+                    <div className={'flex flex-wrap gap-[20px] items-center justify-between'}>
                         <span className={'text-[15px] font-normal text-raven'}>تمامی حقوق مادی و معنوی برای میزبان آنلاین محفوظ می باشد</span>
                         <div className={'flex gap-[30px]'}>
                             <a className={'text-[15px] font-normal text-raven hover:text-themeBlue transition-all'} href="#">قوانین و مقررات</a>

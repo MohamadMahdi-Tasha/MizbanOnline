@@ -23,14 +23,14 @@ export default function SixthSectionComponent():JSX.Element {
     // Returning JSX
     return (
         <div className={'bg-myGrey'}>
-            <SectionComponent className={'py-[73px]'}>
+            <SectionComponent className={'lg:py-[73px] py-[20px]'}>
                 <header className={'mb-[53px]'}>
                     <TitleAndParagraphComponent title={'به خانواده ۳۰۰۰ نفری میزبان آنلاین بپیوندید'} marginBottom={0} centred>
                         پشتیبانی قوی و گسترده متخصصان میزبان آنلاین در شبانه روز ، عملکرد فوق العاده سریع
-                        <br/>
+                        <br className={'lg:block hidden'}/>
                         سرویس های ارائه شده از دلایلی هستند که کاربران ما میزبان آنلاین را توصیه میکنند
                     </TitleAndParagraphComponent>
-                    <div className={'flex justify-center items-center gap-[100px] mt-[38px]'}>
+                    <div className={'flex overflow-x-auto overflow-y-hidden justify-center items-center gap-[100px] mt-[38px]'}>
                         <AchievmentComponent count={'+75000'}>سرویس ارائه شده</AchievmentComponent>
                         <AchievmentComponent count={'173'}>محصول قابل ارائه</AchievmentComponent>
                         <AchievmentComponent count={'+23'}>دیتاسنتر فعال</AchievmentComponent>
@@ -39,13 +39,13 @@ export default function SixthSectionComponent():JSX.Element {
                 </header>
                 <main className={'mb-[41px]'}>
                     <img className={'w-full mb-[30px] block'} src={MainImage} alt="نقشه جهان"/>
-                    <div className={'flex items-center gap-[20px]'}>
+                    <div className={'flex lg:flex-row flex-col  items-center gap-[20px]'}>
                         <CommentComponent name={'رحیم حنایی'} job={'رحیم حنایی'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی ...</CommentComponent>
                         <CommentComponent name={'رحیم حنایی'} job={'رحیم حنایی'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی ...</CommentComponent>
                         <CommentComponent name={'رحیم حنایی'} job={'رحیم حنایی'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی ...</CommentComponent>
                     </div>
                 </main>
-                <footer className={'grid grid-cols-6 gap-x-0 gap-y-[21px]'}>
+                <footer className={'grid lg:grid-cols-6 grid-cols-2 gap-x-0 lg:gap-y-[21px]'}>
                     <a href="#"><img className={'w-full'} src={BaniModeImage} alt="BaniModeImage"/></a>
                     <a href="#"><img className={'w-full'} src={BazarBimeImage} alt="BazarBimeImage"/></a>
                     <a href="#"><img className={'w-full'} src={ertebatFardaImage} alt="ertebatFardaImage"/></a>

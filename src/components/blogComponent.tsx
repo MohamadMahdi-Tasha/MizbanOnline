@@ -9,7 +9,7 @@ interface typeOfProps {
 export default function BlogComponent({date,link, title}:typeOfProps):JSX.Element {
     // Returning JSX
     return (
-        <a href={link}>
+        <a href={link} className={'block lg:w-auto w-[500px]'}>
             <time
                 className={'block text-[14px] font-normal text-raven mb-[10px]'}
                 dateTime={date.toString()}>{
@@ -20,7 +20,7 @@ export default function BlogComponent({date,link, title}:typeOfProps):JSX.Elemen
                 })
             }
             </time>
-            <span className={'block text-[16px] font-semibold text-outerSpace'}>{title}</span>
+            <span className={'block text-[16px] font-semibold text-outerSpace lg:whitespace-normal whitespace-nowrap'}>{title}</span>
         </a>
     );
 }

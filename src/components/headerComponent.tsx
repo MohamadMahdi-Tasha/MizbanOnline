@@ -5,7 +5,7 @@ import HolderComponent from "../chunks/holderComponent.tsx";
 export default function HeaderComponent():JSX.Element {
     // Returning JSX
     return (
-        <header className={'bg-darkBlue'}>
+        <header className={'bg-darkBlue lg:block hidden'}>
             <HolderComponent>
                 <div className={'flex items-center flex-wrap justify-between gap-[20px] py-[20px]'}>
                     <div className={'flex gap-[12px] items-center'}>

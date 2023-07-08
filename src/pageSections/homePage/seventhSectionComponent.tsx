@@ -6,8 +6,8 @@ import BlogComponent from "../../components/blogComponent.tsx";
 export default function SeventhSectionComponent():JSX.Element {
     // Returning JSX
     return (
-        <SectionComponent className={'py-[58px]'}>
-            <header className={'flex items-center justify-between mb-[55px]'}>
+        <SectionComponent className={'lg:py-[58px] py-[20px]'}>
+            <header className={'flex items-center justify-between mb-[55px] flex-wrap'}>
                 <span className={'text-[20px] font-bold text-darkBlue'}>میزبان بلاگ</span>
                 <a href="#">
                     <button className={'font-normal text-[14px] text-raven flex items-center'} tabIndex={-1}>
@@ -18,7 +18,7 @@ export default function SeventhSectionComponent():JSX.Element {
                     </button>
                 </a>
             </header>
-            <main className={'flex items-center justify-between gap-[80px]'}>
+            <main className={'flex overflow-auto items-center justify-between gap-[80px]'}>
                 <BlogComponent
                     date={new Date('2023-07-08')}
                     link={'#'}

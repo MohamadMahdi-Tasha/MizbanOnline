@@ -9,8 +9,8 @@ export default function AchievmentComponent({count,children}:typeOfProps):JSX.El
     // Returning JSX
     return (
         <div className={'[&>span:first-of-type]:hover:text-emerald'}>
-            <span className={'block text-center transition-all text-themeBlue text-[24px] font-semibold mb-[10px]'}>{count}</span>
-            <span className={'block text-center text-raven text-[15px] font-normal'}>{children}</span>
+            <span className={'block whitespace-nowrap text-center transition-all text-themeBlue text-[24px] font-semibold mb-[10px]'}>{count}</span>
+            <span className={'block whitespace-nowrap text-center text-raven text-[15px] font-normal'}>{children}</span>
         </div>
     );
 }

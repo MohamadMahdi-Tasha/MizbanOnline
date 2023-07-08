@@ -13,14 +13,14 @@ export default function TitleAndParagraphComponent({title, children, centred, ma
         <>
             <h3 className={
                 (centred)
-                    ? 'text-darkBlue text-[24px] font-bold mb-[10px] text-center'
-                    : 'text-darkBlue text-[24px] font-bold mb-[10px]'}>
+                    ? 'text-darkBlue lg:text-[24px] text-[20px] font-bold lg:mb-[10px] mb-[8px] lg:text-center'
+                    : 'text-darkBlue lg:text-[24px] text-[20px] font-bold lg:mb-[10px] mb-[8px]'}>
                 {title}
             </h3>
             <p className={
                 (centred)
-                    ? `text-raven text-[16px] font-normal mb-[${marginBottom}px] text-center`
-                    : `text-raven text-[16px] font-normal mb-[${marginBottom}px]`}>
+                    ? `text-raven lg:text-[16px] text-[14px] font-normal mb-[${marginBottom}px] lg:text-center`
+                    : `text-raven lg:text-[16px] text-[14px] font-normal mb-[${marginBottom}px]`}>
                 {children}
             </p>
         </>

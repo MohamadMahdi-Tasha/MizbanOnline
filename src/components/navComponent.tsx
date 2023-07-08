@@ -7,14 +7,14 @@ import HolderComponent from "../chunks/holderComponent.tsx";
 export default function NavComponent():JSX.Element {
     // Returning JSX
     return (
-        <nav className={'bg-white border-b border-b-gainSbro py-[20px]'}>
+        <nav className={'bg-white border-b border-b-gainSbro lg:py-[20px] py-[10px]'}>
             <HolderComponent>
                 <div className={'flex items-center justify-between gap-[20px]'}>
                     <Link to={'/'} className={'flex items-center gap-[10px]'}>
                         <img src={LogoImage} width={'30'} alt="لوگو"/>
                         <span className={'text-[18px] font-semibold'}>میزبان انلاین</span>
                     </Link>
-                    <ul className={'flex flex-wrap justify-center items-center gap-[30px]'}>
+                    <ul className={'lg:flex hidden flex-wrap justify-center items-center gap-[30px]'}>
                         <li><a className={'text-[14px] font-normal text-outerSpace transition-all hover:text-themeBlue'} href="#">هاستینگ</a></li>
                         <li><a className={'text-[14px] font-normal text-outerSpace transition-all hover:text-themeBlue'} href="#">سرور مجازی</a></li>
                         <li><a className={'text-[14px] font-normal text-outerSpace transition-all hover:text-themeBlue'} href="#">خدمات دامنه</a></li>
@@ -23,8 +23,8 @@ export default function NavComponent():JSX.Element {
                     </ul>
                     <div className={'flex flex-wrap justify-center gap-[30px]'}>
                         <a href="tel:02191070175">
-                            <button tabIndex={-1} className={'px-[20px] py-[13px] rounded-[10px] gap-[10px] flex items-center'}>
-                                <span className={'font-normal text-[15px] text-outerSpace'}>
+                            <button tabIndex={-1} className={'lg:px-[20px] lg:py-[13px] px-[10px] py-[10px] rounded-[10px] gap-[10px] flex items-center'}>
+                                <span className={'font-normal text-[15px] text-outerSpace lg:block hidden'}>
                                     021
                                     <span className={'text-orange'}>9107</span>
                                     0175
@@ -37,12 +37,12 @@ export default function NavComponent():JSX.Element {
                             </button>
                         </a>
                         <a href="#">
-                            <button className={'px-[20px] py-[13px] rounded-[10px] bg-emerald shadow-emeraldLike flex gap-[10px] items-center'} tabIndex={-1}>
+                            <button className={'lg:px-[20px] lg:py-[13px] px-[10px] py-[10px] rounded-[10px] bg-emerald shadow-emeraldLike flex gap-[10px] items-center'} tabIndex={-1}>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                     <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
-                                <span className={'text-[15px] font-normal text-white'}>پرتال کاربری</span>
+                                <span className={'text-[15px] font-normal text-white lg:block hidden'}>پرتال کاربری</span>
                             </button>
                         </a>
                     </div>
